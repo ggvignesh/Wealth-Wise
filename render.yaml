@@ -1,0 +1,23 @@
+# render.yaml — WealthWise Render Deployment
+
+services:
+  - type: web
+    name: wealthwise
+    runtime: python
+    region: singapore
+    plan: free
+    buildCommand: "cd frontend && npm install --legacy-peer-deps && npm run build && cd .. && cd backend && pip install -r requirements.txt && cd .."
+    startCommand: "cd backend && gunicorn wsgi:app --bind 0.0.0.0:10000 --workers 1 --timeout 120 --log-level debug"
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        sync: false
+      - key: PORT
+        value: 10000
+      - key: PYTHON_VERSION
+        value: 3.11.4
+      - key: NODE_VERSION
+        value: 18.17.0

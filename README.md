@@ -221,7 +221,7 @@ npm start
 
 | | |
 |---|---|
-| **Email** | gourivignesh.gembali1511@gmail.com |
+| **Email** | ggvignesh15@gmail.com |
 | **Phone** | +91 9182548143 |
 | **Location** |Visakhapatnam, Andhra Pradesh, India |
 

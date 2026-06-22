@@ -49,8 +49,8 @@ export default function ContactPage() {
               <div>
                 <div className="contact-item-label">Email Address</div>
                 <div className="contact-item-value">
-                  <a href="mailto:gourivignesh.gembali1511@gmail.com" style={{ color: 'var(--accent-gold)', textDecoration: 'none' }}>
-                    gourivignesh.gembali1511@gmail.com
+                  <a href="mailto:ggvignesh15@gmail.com" style={{ color: 'var(--accent-gold)', textDecoration: 'none' }}>
+                    ggvignesh15@gmail.com
                   </a>
                 </div>
               </div>
